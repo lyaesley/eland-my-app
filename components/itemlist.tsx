@@ -9,6 +9,7 @@ import { Badge } from "@/components/ui/badge"
 import { CardContent, Card } from "@/components/ui/card"
 import {gql, useQuery} from "@apollo/client";
 import { useContext } from 'react';
+import Image from "next/image";
 
 export function ItemList() {
 
@@ -30,9 +31,9 @@ export function ItemList() {
   return (
     <div className="grid grid-cols-4 gap-4">
         {items?.map((item: any) => (
-            <Card className="w-full">
+            <Card className="w-full" key={item.id}>
                 <CardContent className="p-2">
-                    <img
+                    <Image
                         alt="Product Image"
                         className="w-full h-auto"
                         height="250"
