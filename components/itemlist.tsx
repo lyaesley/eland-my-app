@@ -33,11 +33,11 @@ export function ItemList() {
         {items?.map((item: any) => (
             <Card className="w-full" key={item.id}>
                 <CardContent className="p-2">
-                    <Image
+                    <img
                         alt="Product Image"
                         className="w-full h-auto"
                         height="250"
-                        src={`https://random.imagecdn.app/500/150`}
+                        src={`https://random.imagecdn.app/500/150?q=${item.id}`}
                         style={{
                             aspectRatio: "200/250",
                             objectFit: "cover",
