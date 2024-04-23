@@ -22,7 +22,7 @@ export default function RootLayout({
     return (
         <html lang="en">
         <body className={inter.className}>
-        <ClerkProvider>
+        {/*<ClerkProvider>*/}
         <ApolloWrapper>
             <header className="flex justify-between p-4">
                 <div><Link href="/">home</Link></div>
@@ -30,7 +30,7 @@ export default function RootLayout({
             </header>
             {children}
         </ApolloWrapper>
-        </ClerkProvider>
+        {/*</ClerkProvider>*/}
         </body>
         </html>
     );
