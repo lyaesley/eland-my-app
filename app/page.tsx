@@ -1,5 +1,9 @@
 import Image from "next/image";
+import {Button} from "@/components/ui/button";
 
 export default function Home() {
-  return <div>커머스 전시개발 이준영</div>;
+  return (
+      <Button>Click me</Button>
+
+  );
 }
